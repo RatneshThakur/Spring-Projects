@@ -3,7 +3,20 @@
 
 <beans>
 	<bean id="triangle"  class="Triangle">
-		<constructor-arg value="Equilaterl"></constructor-arg>
-		<constructor-arg value ="20"></constructor-arg>
+		<property name="pointA" ref="pointa"/>
+		<property name="pointB" ref="pointb"/>
+		<property name="pointC" ref="pointc"/>
+	</bean>
+	<bean id="pointa" class = "Point">
+		<property name="x" value ="20"/>
+		<property name="y" value ="10"/>
+	</bean>
+	<bean id="pointb" class = "Point">
+	<property name="x" value ="20"/>
+		<property name="y" value ="10"/>
+	</bean>
+	<bean id="pointc" class = "Point">
+	<property name="x" value ="20"/>
+		<property name="y" value ="10"/>
 	</bean>
 </beans>

@@ -1,27 +1,28 @@
 public class Triangle {
-	private String type;
-	private int height;
 	
-	public String getType() {
-		return type;
+	Point pointA;
+	Point pointB;
+	Point pointC;
+	public Point getPointA() {
+		return pointA;
+	}
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
+	}
+	public Point getPointB() {
+		return pointB;
+	}
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+	public Point getPointC() {
+		return pointC;
+	}
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
 	}
 	
-	/*public void setType(String type) {
-		this.type = type;
-	}*/
-	
-	public int getHeight() {
-		return height;
-	}
-
-	public Triangle(String type_var) {
-		type = type_var;
-	}
-	public Triangle(String type_var, int height_var) {
-		type = type_var;
-		height = height_var;
-	}
 	public void draw(){
-		System.out.println(getType()+" Triangle drawn of " + getHeight());
+		System.out.println("Triangle drawn with "+ "("+pointA.getX() + "," + pointA.getY()+ ")"+ "("+pointB.getX() + "," + pointB.getY()+ ")"+ "("+pointB.getX() + "," + pointB.getY()+ ")");
 	}
 }
